@@ -2,4 +2,4 @@
 
 ## Introduction
 
-At Anchore, we take a preventative policy-based compliance approach specific to organization needs. Our philosophy of scanning container image as early as possible in the development lifecycle, greatly reduces the risk of vulnerbale, non-compliant image from making their way into trust container registries and production environments. 
+At Anchore, we take a preventative, policy based compliance approach specific to organizational needs. Our philosophy of scanning and evaluating Docker images against user defined policies as early as possible in the development lifecycle, greatly reduces vulnerable, non-compliant images from making their way into trusted container registries and production environments.
