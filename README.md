@@ -15,6 +15,8 @@ Before we define *'policy-based compliance'*, it helps to gain a solid understan
 Now that we have a definition and example, we can begin to discuss the aspect role play in achieving compliance. In short, *policy based compliance* means adhering to a set compliance requirements via customizable rules defined by a user.  In some cases, security software tools will contain a policy engine that allows for development teams to create rules that correspond to a particular security concern addressed in a compliance publication.
 
 
-## How can organizations achieve this?
+## How can organizations achieve compliance in containerizaed environments?
+
+Here at Anchore, our focus is helping organizations secure their container environments by scanning and analyzing container images. Oftentimes, our customers come to us to help them achieve certain compliance requirements they have, and we can often point them to our policy engine. Anchore polcies are user-defined checks that are evaluated against an analyzed image.  
 
 ## Conclusion
