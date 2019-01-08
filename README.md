@@ -40,8 +40,10 @@ Anchore policy bundles (structured as JSON documents) are the unit of policy def
 
 Anchore policies return a pass or fail evaluation which can then be used to make decisions.
 
-#### Putting it together
+#### Putting it together with compliance
 
-Managing and securing built container images in CI/CD can be challenging without the right process and workflow. However, with Anchore, development and security teams can harder their security posture be adding a proper image scanning step, reporting back on CVEs, and fine tuning policies to allow only compliant images make their way to production environments. It is common best practice for Anchore users to configure their CI pipelines to fail is non-compliant, vulnerable images are discovered following a scan. 
+Given the variance of compliance needs across different enterprises, having a flexible and robust policy engine becomes a necessity for organizations needing to ahere to one or many sets of standards. In addition, managing and securing container images in CI/CD can be challenging without the proper workflow. However, with Anchore, development and security teams can hardern their security posture be adding an image scanning step to their CI, reporting back on CVEs, and fine tuning policies meet compliance requirements. With compliance checks in place, only container images that meet the requirements laid out a particular agency or industry will be allowed to make their way into production ready environments.
 
 ## Conclusion
+
+While we've defined compliance, given an example, and related it back to what we see most frequently at Anchore, it is helpful to note that image scanning is typically just one important step in meeting certain compliance requirements. Anchore is focused on static image analysis, and does not monitor the containers once they are running, nor does it assess the hosts where the containers will be running. Most often, compliance requirements specific to containerized environments, require standards to be met for the container host, container image, and container runtime. 
