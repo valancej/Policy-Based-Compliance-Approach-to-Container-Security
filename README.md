@@ -38,7 +38,9 @@ Anchore policy bundles (structured as JSON documents) are the unit of policy def
 - Image manifest changes
 - Exposed ports
 
-Anchore policies return a pass or fail evaluation which can then be used to make decisions.
+Anchore policies return a pass or fail decision result.
+
+To better gauge the flexbility of Anchore's policy engine, here is a full list of policy gates and triggers: https://anchore.freshdesk.com/support/solutions/articles/36000073896-anchore-policy-checks
 
 #### Putting it together with compliance
 
