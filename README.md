@@ -12,7 +12,8 @@ Before we define *'policy-based compliance'*, it helps to gain a solid understan
 
 ## What do we mean by *'policy-based'*?
 
-Now that we have a definition and example, we can begin to discuss the role policies play in achieving compliance. Organizations looking to adhere to certain rules, 
+Now that we have a definition and example, we can begin to discuss the aspect policies play in achieving compliance. In short, *policy based compliance* means adhering to a set compliance requirements via customizable rules defined by a user.  In some cases, security software tools will contain a policy engine that allows for development teams to create rules that correspond to a particular security concern addressed in a compliance publication.
+
 
 ## How can organizations achieve this?
 
