@@ -27,7 +27,19 @@ Adding image scanning against a list of CVEs to a build pipeline allows develope
 
 #### Adding governance
 
-Following each scanned image, we now have analyzed image data to work with. Based on the previous paragraph, we've also been able to extract any CVEs wihin images as well. It is typically at this stage that security and devops teams want to add a layer of control to the images being scanned in order to make decisions on which images should be promoted into production environments.
+Once an image has been analyzed and it's content has been discovered, categorized, and processed, the resulting data can be evaluated against a user-defined set of rules to give a final pass or fail recommendation for the image. It is typically at this stage that security and devops teams want to add a layer of control to the images being scanned in order to make decisions on which images should be promoted into production environments. 
+
+Anchore policy bundles (structured as JSON documents) are the unit of policy definition and evaluation. A user may create multiple policy bundles, however for evaluation, only one can be marked as 'active'. A policy is expressed as a policy bundle, which is made up from a set of rules to perform an evaluation of an image. These rules can define check against an image for things such as:
+
+- Security vulnerabilities
+- Package whitelists and blacklists
+- Configuration file contents
+- Presence of credentials in an image
+- Image manifest changes
+- Exposed ports
+
+Anchore policies return a pass or fail evaluation which can then be used to make decisions. A common CI workflow is to only push container images to a production registry if they contain zero high severity CVEs. 
+
 
 
 ## Conclusion
