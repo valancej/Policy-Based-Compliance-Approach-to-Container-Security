@@ -38,8 +38,10 @@ Anchore policy bundles (structured as JSON documents) are the unit of policy def
 - Image manifest changes
 - Exposed ports
 
-Anchore policies return a pass or fail evaluation which can then be used to make decisions. A common CI workflow is to only push container images to a production registry if they contain zero high severity CVEs. 
+Anchore policies return a pass or fail evaluation which can then be used to make decisions.
 
+#### Putting it together
 
+Managing and securing built container images in CI/CD can be challenging without the right process and workflow. However, with Anchore, development and security teams can harder their security posture be adding a proper image scanning step, reporting back on CVEs, and fine tuning policies to allow only compliant images make their way to production environments. It is common best practice for Anchore users to configure their CI pipelines to fail is non-compliant, vulnerable images are discovered following a scan. 
 
 ## Conclusion
