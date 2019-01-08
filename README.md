@@ -19,9 +19,9 @@ Now that we have a definition and example, we can begin to discuss the aspect ro
 
 Here at Anchore, our focus is helping organizations secure their container environments by scanning and analyzing container images. Oftentimes, our customers come to us to help them achieve certain compliance requirements they have, and we can often point them to our policy engine. Anchore policies are user-defined checks that are evaluated against an analyzed image. A best practice for implementing these checks is through a step in CI/CD. By adding an Anchore image scanning step in a CI tool like Jenkins or Gitlab, development teams can create an added layer of governance to their build pipeline. 
 
-### Proactive approach
+### Complete approach to image scanning
 
-#### Image scanning
+#### Vulnerability scanning
 
 Adding image scanning against a list of CVEs to a build pipeline allows developers to be proactive about security as they will get a near immediate feedback loop on potentially vulnerable images. Anchore image scanning will identify any known vulnerabilities in the container images, enforcing a shift-left paragidm in the development lifecycle. Once vulnerabilities have been identified, reports can be generated listing infomation about the CVEs and vulnerable packages within the images. In addition, Anchore can be configured to send webhooks to specified endpoints if new CVEs are published that impact an image that has been previously scanned. At Anchore, we've seen integrations with Slack or JIRA to alert teams or file tickets automatically when vulnerabilities are discovered.  
 
