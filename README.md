@@ -17,6 +17,6 @@ Now that we have a definition and example, we can begin to discuss the aspect ro
 
 ## How can organizations achieve compliance in containerizaed environments?
 
-Here at Anchore, our focus is helping organizations secure their container environments by scanning and analyzing container images. Oftentimes, our customers come to us to help them achieve certain compliance requirements they have, and we can often point them to our policy engine. Anchore policies are user-defined checks that are evaluated against an analyzed image. A best practice for implementing these checks is through a step in CI/CD. By adding an Anchore image scanning step in a CI tool like Jenkins or Gitlab, development teams can create an added layer of governance to the build pipeline. 
+Here at Anchore, our focus is helping organizations secure their container environments by scanning and analyzing container images. Oftentimes, our customers come to us to help them achieve certain compliance requirements they have, and we can often point them to our policy engine. Anchore policies are user-defined checks that are evaluated against an analyzed image. A best practice for implementing these checks is through a step in CI/CD. By adding an Anchore image scanning step in a CI tool like Jenkins or Gitlab, development teams can create an added layer of governance to their build pipeline. 
 
 ## Conclusion
